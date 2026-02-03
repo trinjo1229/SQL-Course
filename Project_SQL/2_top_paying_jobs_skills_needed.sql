@@ -1,3 +1,4 @@
+-- Find top 10 paying remote jobs
 WITH top_10_jobs AS (
     SELECT
         job_id,
@@ -14,6 +15,7 @@ WITH top_10_jobs AS (
     LIMIT 10
 ),
 
+-- Find what skills are ass. with each job posting
 job_to_skills AS (
     SELECT
         skills_dim.skill_id,
@@ -25,6 +27,7 @@ job_to_skills AS (
         skills_job_dim ON skills_job_dim.skill_id = skills_dim.skill_id
 )
 
+-- Find average salary and skills needed for top 10 positions
 SELECT 
     top_10_jobs.job_id,
     top_10_jobs.job_title,

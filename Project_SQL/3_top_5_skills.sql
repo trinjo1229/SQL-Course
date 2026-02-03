@@ -1,3 +1,4 @@
+-- Find all skills ass. with each job
 WITH jobs_and_skills AS (
     SELECT 
         job_postings_fact.job_id AS jobs,
@@ -10,6 +11,7 @@ WITH jobs_and_skills AS (
         job_title_short = 'Data Analyst'
 )
 
+-- Find the most in-demand skills
 SELECT 
     skills_dim.skills AS skill_name,
     COUNT(DISTINCT jobs) AS job_count
