@@ -223,4 +223,7 @@ LIMIT 10
 
     - SQL stands to be the most saught after and relatively well paid skill, cementing that it is a prized skill for Data Analyst to learn.
 
-## Conclustions
+## Conclustion
+This project demonstrates my ability to use SQL to analyze real-world data and extract insights relevant to the data analytics job market. By working with job posting data, I applied core SQL concepts such as joins, aggregations, subqueries, and common table expressions to answer practical business-focused questions.
+
+Through this analysis, I identified in-demand skills, salary trends, and how specific technical skills correlate with higher compensation. Overall, this project showcases my proficiency in SQL, my analytical thinking, and my ability to turn raw data into actionable insights — skills directly applicable to a data analyst role.
