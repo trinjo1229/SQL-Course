@@ -11,7 +11,7 @@ The purpose of this project was to properly evaluate the job market for those wh
 2. What skills are required for these top-paying jobs?
 3. What skills are most in demand for data analysts?
 4. What skills are asscociated with higher salaries?
-5. What are the msot optimal skills to learn for a data analyst looking to maximize job market value?
+5. What are the most optimal skills to learn for a data analyst looking to maximize job market value?
 
 In order to conduct this analyst I used to the data provided by Luke Barouse's SQL course. The data comprised of job posting data from 2023 including: job titles, location, remote availability, required skills, and more.
 
@@ -25,6 +25,7 @@ In order to complete this project I used the following tools:
 
 ## The Analysis
 ### 1. What are the top-paying data analyst jobs?
+I found the top 10 remote Data Analyst possitions available and their respective salaries.
 ```
 SELECT 
     job_id,
@@ -48,6 +49,7 @@ LIMIT 10
 ```
 
 ### 2. What skills are required for these top-paying jobs?
+By joining the job postings and skills tables, I was able to identify the skills are assiciated with the highest compensated positions.
 ```
 -- Find top 10 paying remote jobs 
 WITH top_10_jobs AS (
@@ -91,6 +93,7 @@ INNER JOIN
 ```
 
 ### 3. What skills are most in demand for data analysts?
+To gain insight on what skills to acquire as a Data Analyst, I identified the 5 most requested skills across all job postings.
 ```
 -- Find all skills ass. with each job
 WITH jobs_and_skills AS (
@@ -121,6 +124,7 @@ LIMIT 5
 ```
 
 ### 4. What skills are asscociated with higher salaries?
+This query helped identify the most compensated skills assiciated with Data Analysis roles.
 ```
 -- Match skills to jobs to get salary information
 WITH skills_and_salary AS(
@@ -158,6 +162,7 @@ ORDER BY
 ```
 
 ### 5. What are the msot optimal skills to learn for a data analyst looking to maximize job market value?
+To maximize a Data Analyst's chances of obtaining a well compensated position, I combined my previous findings to identify skills that are both highly compensated and highly requested. 
 ```
 -- Match skills to jobs to get salary information
 WITH skills_job_salary AS(
@@ -201,5 +206,21 @@ ORDER BY
 LIMIT 10
 ```
 
-## What I Learned
+## Insights Learned
+1. Top-paying Data Analyst Jobs:
+
+    - The salary range for the highest paying Data Analyst positions is between $135,000 and $650,000. 
+2. Skills Required For These Top-paying Jobs:
+
+    - There are many skills required for these top paying roles, but amongst them ones like SQL, Tableau, Excel, and Python often repeated.
+3. Skills In High Demand:
+
+    - The most requested skills for a Data Analyst included: SQL, Excel, Python, Tableau, and Power Bi, in the respective order.
+4. Skills Asscociated With Higher Salaries:
+
+    - The top two paying skills include SVN and Solidity. Given their lack of appearance in the top most requested skills list, but their high associated salary, it implies a more niche but highly valued use.
+5. Most Optimal Skills to Learn:
+
+    - SQL stands to be the most saught after and relatively well paid skill, cementing that it is a prized skill for Data Analyst to learn.
+
 ## Conclustions
