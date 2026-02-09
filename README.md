@@ -1,6 +1,6 @@
 # SQL-Course-Project
 ## Introduction
-In preparation for transitioning into data analytics I've completed this course project! It has not only helped me gain and improve on the skills I need to become a data analyst, but it provided great insight into the the job market for data analyst. This includes the most prodominant skills requested of data analyst and what combination of skills will increase a data analyst's market appeal.
+In preparation for transitioning into data analytics, I've completed this course project! It has not only helped me gain and improve the skills I need to become a data analyst, but it provided great insight into the job market for data analyst. This includes the most predominant skills requested of data analyst and what combination of skills will increase a data analyst's market appeal.
 
 To see my queries please click here!
 
@@ -13,19 +13,19 @@ The purpose of this project was to properly evaluate the job market for those wh
 4. What skills are asscociated with higher salaries?
 5. What are the most optimal skills to learn for a data analyst looking to maximize job market value?
 
-In order to conduct this analyst I used to the data provided by Luke Barouse's SQL course. The data comprised of job posting data from 2023 including: job titles, location, remote availability, required skills, and more.
+In order to conduct this analysis I used data provided by Luke Barouse's SQL course. The data comprised of job posting data from 2023 including: job titles, location, remote availability, required skills, and more.
 
 ## Languages and Tools I Used
 In order to complete this project I used the following tools:
-- **SQL:** This language allowed me to create insert my data into a database, and then query that data to gain insights.
+- **SQL:** This language allowed me to create and insert my data into a database, and then query that data to gain insights.
 
 - **PostgreSQL:** This database management system allowed me to store all of my data.
 
-- **Visual Studio Code:** This code editor allowed for me to connect and query into my database.
+- **Visual Studio Code:** This code editor allowed for me to connect to and query into my database.
 
 ## The Analysis
 ### 1. What are the top-paying data analyst jobs?
-I found the top 10 remote Data Analyst possitions available and their respective salaries.
+I found the top 10 remote Data Analyst positions available and their respective salaries.
 ```
 SELECT 
     job_id,
@@ -49,7 +49,7 @@ LIMIT 10
 ```
 
 ### 2. What skills are required for these top-paying jobs?
-By joining the job postings and skills tables, I was able to identify the skills are assiciated with the highest compensated positions.
+By joining the job postings and skills tables, I was able to identify the skills are associated with the highest compensated positions.
 ```
 -- Find top 10 paying remote jobs 
 WITH top_10_jobs AS (
@@ -161,7 +161,7 @@ ORDER BY
     sal_average DESC
 ```
 
-### 5. What are the msot optimal skills to learn for a data analyst looking to maximize job market value?
+### 5. What are the most optimal skills to learn for a data analyst looking to maximize job market value?
 To maximize a Data Analyst's chances of obtaining a well compensated position, I combined my previous findings to identify skills that are both highly compensated and highly requested. 
 ```
 -- Match skills to jobs to get salary information
@@ -212,18 +212,18 @@ LIMIT 10
     - The salary range for the highest paying Data Analyst positions is between $135,000 and $650,000. 
 2. Skills Required For These Top-paying Jobs:
 
-    - There are many skills required for these top paying roles, but amongst them ones like SQL, Tableau, Excel, and Python often repeated.
+    - There are many skills required for these top-paying roles, but amongst them skills such as SQL, Tableau, Excel, and Python often repeated.
 3. Skills In High Demand:
 
-    - The most requested skills for a Data Analyst included: SQL, Excel, Python, Tableau, and Power Bi, in the respective order.
+    - The most requested skills for a Data Analyst included: SQL, Excel, Python, Tableau, and Power BI, in the respective order.
 4. Skills Asscociated With Higher Salaries:
 
     - The top two paying skills include SVN and Solidity. Given their lack of appearance in the top most requested skills list, but their high associated salary, it implies a more niche but highly valued use.
 5. Most Optimal Skills to Learn:
 
-    - SQL stands to be the most saught after and relatively well paid skill, cementing that it is a prized skill for Data Analyst to learn.
+    - SQL stands to be the most sought after and relatively well paid skill, cementing that it is a prized skill for Data Analysts to learn.
 
-## Conclustion
+## Conclusion
 This project demonstrates my ability to use SQL to analyze real-world data and extract insights relevant to the data analytics job market. By working with job posting data, I applied core SQL concepts such as joins, aggregations, subqueries, and common table expressions to answer practical business-focused questions.
 
 Through this analysis, I identified in-demand skills, salary trends, and how specific technical skills correlate with higher compensation. Overall, this project showcases my proficiency in SQL, my analytical thinking, and my ability to turn raw data into actionable insights — skills directly applicable to a data analyst role.
