@@ -2,7 +2,7 @@
 ## Introduction
 In preparation for transitioning into data analytics, I've completed this course project! It has not only helped me gain and improve the skills I need to become a data analyst, but it provided great insight into the job market for data analyst. This includes the most predominant skills requested of data analyst and what combination of skills will increase a data analyst's market appeal.
 
-To see my queries please click here!
+To see my queries please click [here](Project_SQL)!
 
 ## Background
 The purpose of this project was to properly evaluate the job market for those who want to get into data. Since it's my goal to become a data analyst I decided to focus my insights around this position. In doing so I aimed to answer the following questions:
