@@ -1,4 +1,4 @@
-# SQL-Course-Project
+# SQL-For-Data-Analytics-Course-Project
 ## Introduction
 In preparation for transitioning into data analytics, I've completed this course project! It has not only helped me gain and improve the skills I need to become a data analyst, but it provided great insight into the job market for data analyst. This includes the most predominant skills requested of data analyst and what combination of skills will increase a data analyst's market appeal.
 
